@@ -14,6 +14,12 @@ module.exports = function(grunt) {
       build: ['<%= dir.dist %>/**/*']
     },
     copy: {
+      src: {
+        expand: true,
+        cwd: '<%= dir.src %>',
+        src: ['**/*'],
+        dest: '<%= dir.dist %>'
+      },
       vendor: {
         files: [
           // Underscore
@@ -62,6 +68,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'clean:build',
     'copy:vendor',
-    'uglify:vendor'
+    'uglify:vendor',
+    'copy:src'
   ]);
 };

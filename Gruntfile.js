@@ -36,6 +36,8 @@ module.exports = function(grunt) {
           {expand: true, cwd: '<%= dir.vendor %>bootstrap/dist/fonts/', src: ['*'], dest: '<%= dir.distVendor %>bootstrap/fonts/', filter: 'isFile'},
           // Bootstrap - css
           {expand: true, cwd: '<%= dir.vendor %>bootstrap/dist/css/', src: ['*.min.css'], dest: '<%= dir.distVendor %>bootstrap/css/', filter: 'isFile'},
+          // remarkable-bootstrap-notify
+          {src: '<%= dir.vendor %>remarkable-bootstrap-notify/dist/bootstrap-notify.min.js', dest: '<%= dir.distVendor %>bootstrap/bootstrap-notify/js/bootstrap-notify.min.js'}
         ]
       }
     },

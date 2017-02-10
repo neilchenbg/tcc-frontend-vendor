@@ -16,7 +16,8 @@ require.config({
     'backbone': 'vendor/backbone-min',
     'mustache': 'vendor/mustache.min',
     'jquery': 'vendor/jquery.min',
-    'bootstrap': 'vendor/bootstrap.min'
+    'bootstrap': 'vendor/bootstrap.min',
+    'bootstrap/notify': 'vendor/bootstrap/bootstrap-notify/js/bootstrap-notify.min'
   },
   map: {
     '*': {
@@ -26,7 +27,8 @@ require.config({
     }
   },
   shim : {
-    'bootstrap': {'deps': ['jquery']}
+    'bootstrap': {'deps': ['jquery']},
+    'bootstrap/notify': {'deps': ['bootstrap']}
   },
   config: {
     i18n: {locale: 'zh-TW'}

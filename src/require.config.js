@@ -1,15 +1,3 @@
-if (!String.prototype.format) {
-  String.prototype.format = function() {
-    var args = arguments;
-    return this.replace(/{(\d+)}/g, function(match, number) { 
-      return typeof args[number] != 'undefined'
-        ? args[number]
-        : match
-      ;
-    });
-  };
-}
-
 require.config({
   paths: {
     'underscore': 'vendor/underscore-min',
@@ -29,9 +17,9 @@ require.config({
   shim : {
     'bootstrap': {'deps': ['jquery']},
     'bootstrap/notify': {'deps': ['bootstrap']}
-  },
-  config: {
-    i18n: {locale: 'zh-TW'}
   }
+  // config: {
+  //   i18n: {locale: 'zh-TW'}
+  // },
   // urlArgs: "ts=" + (new Date()).getTime()
 });

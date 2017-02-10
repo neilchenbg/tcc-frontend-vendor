@@ -14,12 +14,6 @@ module.exports = function(grunt) {
       build: ['<%= dir.dist %>/**/*']
     },
     copy: {
-      src: {
-        expand: true,
-        cwd: '<%= dir.src %>',
-        src: ['**/*'],
-        dest: '<%= dir.dist %>'
-      },
       vendor: {
         files: [
           // Underscore
@@ -45,6 +39,16 @@ module.exports = function(grunt) {
         ]
       }
     },
+    concat: {
+      options: {
+        separator: '\n\n',
+        banner: '/*\n * <%= pkg.name %> v<%= pkg.version %>\n * Copyright © Campuscruiser, All Rights Reserved.\n */\n\n'
+      },
+      src: {
+        src: ['<%= dir.src %>**/*.js'],
+        dest: '<%= dir.dist %>init.js'
+      }
+    },
     uglify: {
       vendor: {
         files: [
@@ -63,6 +67,7 @@ module.exports = function(grunt) {
   
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // 監聽JS變更事件
@@ -75,6 +80,6 @@ module.exports = function(grunt) {
     'clean:build',
     'copy:vendor',
     'uglify:vendor',
-    'copy:src'
+    'concat:src'
   ]);
 };

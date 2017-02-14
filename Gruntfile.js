@@ -23,13 +23,13 @@ module.exports = function(grunt) {
           // Mustache
           {src: '<%= dir.vendor %>mustache.js/mustache.min.js', dest: '<%= dir.distVendor %>mustache.min.js'},
           // jQuery
-          {src: '<%= dir.vendor %>jquery/dist/jquery.min.js', dest: '<%= dir.distVendor %>jquery.min.js'},
+          // {src: '<%= dir.vendor %>jquery/dist/jquery.min.js', dest: '<%= dir.distVendor %>jquery.min.js'},
           // Bootstrap
-          {src: '<%= dir.vendor %>bootstrap/dist/js/bootstrap.min.js', dest: '<%= dir.distVendor %>bootstrap.min.js'},
+          // {src: '<%= dir.vendor %>bootstrap/dist/js/bootstrap.min.js', dest: '<%= dir.distVendor %>bootstrap.min.js'},
           // Bootstrap - font
-          {expand: true, cwd: '<%= dir.vendor %>bootstrap/dist/fonts/', src: ['*'], dest: '<%= dir.distVendor %>bootstrap/fonts/', filter: 'isFile'},
+          // {expand: true, cwd: '<%= dir.vendor %>bootstrap/dist/fonts/', src: ['*'], dest: '<%= dir.distVendor %>bootstrap/fonts/', filter: 'isFile'},
           // Bootstrap - css
-          {expand: true, cwd: '<%= dir.vendor %>bootstrap/dist/css/', src: ['*.min.css'], dest: '<%= dir.distVendor %>bootstrap/css/', filter: 'isFile'},
+          // {expand: true, cwd: '<%= dir.vendor %>bootstrap/dist/css/', src: ['*.min.css'], dest: '<%= dir.distVendor %>bootstrap/css/', filter: 'isFile'},
           // remarkable-bootstrap-notify
           {src: '<%= dir.vendor %>remarkable-bootstrap-notify/dist/bootstrap-notify.min.js', dest: '<%= dir.distVendor %>bootstrap/bootstrap-notify/js/bootstrap-notify.min.js'},
           // font awesome - font

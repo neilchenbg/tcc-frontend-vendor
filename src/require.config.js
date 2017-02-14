@@ -3,8 +3,8 @@ require.config({
     'underscore': 'vendor/underscore-min',
     'backbone': 'vendor/backbone-min',
     'mustache': 'vendor/mustache.min',
-    'jquery': 'vendor/jquery.min',
-    'bootstrap': 'vendor/bootstrap.min',
+    // 'jquery': 'vendor/jquery.min',
+    // 'bootstrap': 'vendor/bootstrap.min',
     'bootstrap/notify': 'vendor/bootstrap/bootstrap-notify/js/bootstrap-notify.min'
   },
   map: {
@@ -18,8 +18,6 @@ require.config({
     'bootstrap': {'deps': ['jquery']},
     'bootstrap/notify': {'deps': ['bootstrap']}
   }
-  // config: {
-  //   i18n: {locale: 'zh-TW'}
-  // },
+  // locale: 'zh-TW',
   // urlArgs: "ts=" + (new Date()).getTime()
 });

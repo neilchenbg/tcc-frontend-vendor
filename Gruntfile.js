@@ -30,12 +30,18 @@ module.exports = function(grunt) {
           // {expand: true, cwd: '<%= dir.vendor %>bootstrap/dist/fonts/', src: ['*'], dest: '<%= dir.distVendor %>bootstrap/fonts/', filter: 'isFile'},
           // Bootstrap - css
           // {expand: true, cwd: '<%= dir.vendor %>bootstrap/dist/css/', src: ['*.min.css'], dest: '<%= dir.distVendor %>bootstrap/css/', filter: 'isFile'},
+          // Spinkit
+          {src: '<%= dir.vendor %>SpinKit/css/spinkit.css', dest: '<%= dir.distVendor %>spinKit/css/spinkit.css'},
           // remarkable-bootstrap-notify
           {src: '<%= dir.vendor %>remarkable-bootstrap-notify/dist/bootstrap-notify.min.js', dest: '<%= dir.distVendor %>bootstrap/bootstrap-notify/js/bootstrap-notify.min.js'},
           // font awesome - font
           {expand: true, cwd: '<%= dir.vendor %>components-font-awesome/fonts/', src: ['*'], dest: '<%= dir.distVendor %>font-awesome/fonts/', filter: 'isFile'},
           // font awesome - css
-          {expand: true, cwd: '<%= dir.vendor %>components-font-awesome/css/', src: ['*.min.css'], dest: '<%= dir.distVendor %>font-awesome/css/', filter: 'isFile'}
+          {expand: true, cwd: '<%= dir.vendor %>components-font-awesome/css/', src: ['*.min.css'], dest: '<%= dir.distVendor %>font-awesome/css/', filter: 'isFile'},
+          // jstree
+          {src: '<%= dir.vendor %>jstree/dist/jstree.min.js', dest: '<%= dir.distVendor %>jquery/jstree/js/jstree.min.js'},
+          // jstree - css
+          {expand: true, cwd: '<%= dir.vendor %>jstree/dist/themes/default/', src: ['*'], dest: '<%= dir.distVendor %>jquery/jstree/css/', filter: 'isFile'}
         ]
       }
     },

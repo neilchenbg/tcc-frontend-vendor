@@ -41,7 +41,13 @@ module.exports = function(grunt) {
           // jstree
           {src: '<%= dir.vendor %>jstree/dist/jstree.min.js', dest: '<%= dir.distVendor %>jquery/jstree/js/jstree.min.js'},
           // jstree - css
-          {expand: true, cwd: '<%= dir.vendor %>jstree/dist/themes/default/', src: ['*'], dest: '<%= dir.distVendor %>jquery/jstree/css/', filter: 'isFile'}
+          {expand: true, cwd: '<%= dir.vendor %>jstree/dist/themes/default/', src: ['*'], dest: '<%= dir.distVendor %>jquery/jstree/css/', filter: 'isFile'},
+          // d3
+          {src: '<%= dir.vendor %>d3/d3.min.js', dest: '<%= dir.distVendor %>d3.min.js'},
+          // radar-chart-d3
+          {src: '<%= dir.vendor %>radar-chart-d3/src/radar-chart.min.js', dest: '<%= dir.distVendor %>d3/radar-chart/js/radar-chart.min.js'},
+          // radar-chart-d3 - css
+          {expand: true, cwd: '<%= dir.vendor %>radar-chart-d3/src/', src: ['*.min.css'], dest: '<%= dir.distVendor %>d3/radar-chart/css/', filter: 'isFile'}
         ]
       }
     },

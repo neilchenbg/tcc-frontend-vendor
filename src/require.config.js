@@ -7,6 +7,7 @@ require.config({
     // 'jquery': 'vendor/jquery.min',
     // 'bootstrap': 'vendor/bootstrap.min',
     'd3': 'vendor/d3.min',
+    'sortable': 'vendor/sortable.min',
     'jquery/jstree': 'vendor/jquery/jstree/js/jstree.min',
     'bootstrap/notify': 'vendor/bootstrap/bootstrap-notify/js/bootstrap-notify.min',
     'd3/radar': 'vendor/d3/radar-chart/js/radar-chart.min'

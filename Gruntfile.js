@@ -47,7 +47,9 @@ module.exports = function(grunt) {
           // radar-chart-d3
           {src: '<%= dir.vendor %>radar-chart-d3/src/radar-chart.min.js', dest: '<%= dir.distVendor %>d3/radar-chart/js/radar-chart.min.js'},
           // radar-chart-d3 - css
-          {expand: true, cwd: '<%= dir.vendor %>radar-chart-d3/src/', src: ['*.min.css'], dest: '<%= dir.distVendor %>d3/radar-chart/css/', filter: 'isFile'}
+          {expand: true, cwd: '<%= dir.vendor %>radar-chart-d3/src/', src: ['*.min.css'], dest: '<%= dir.distVendor %>d3/radar-chart/css/', filter: 'isFile'},
+          // Sortable
+          {src: '<%= dir.vendor %>Sortable/Sortable.min.js', dest: '<%= dir.distVendor %>sortable.min.js'}
         ]
       }
     },

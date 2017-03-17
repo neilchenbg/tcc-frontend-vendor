@@ -24,6 +24,8 @@ module.exports = function(grunt) {
           {src: '<%= dir.vendor %>mustache.js/mustache.min.js', dest: '<%= dir.distVendor %>mustache.min.js'},
           // jQuery
           // {src: '<%= dir.vendor %>jquery/dist/jquery.min.js', dest: '<%= dir.distVendor %>jquery.min.js'},
+          // jQuery Validation
+          {src: '<%= dir.vendor %>jquery-validation/dist/jquery.validate.min.js', dest: '<%= dir.distVendor %>jquery/validate/js/jquery.validate.min.js'},
           // Bootstrap
           // {src: '<%= dir.vendor %>bootstrap/dist/js/bootstrap.min.js', dest: '<%= dir.distVendor %>bootstrap.min.js'},
           // Bootstrap - font

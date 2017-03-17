@@ -9,6 +9,7 @@ require.config({
     'd3': 'vendor/d3.min',
     'sortable': 'vendor/sortable.min',
     'jquery/jstree': 'vendor/jquery/jstree/js/jstree.min',
+    'jquery/validation': 'vendor/jquery/validate/js/jquery.validate.min',
     'bootstrap/notify': 'vendor/bootstrap/bootstrap-notify/js/bootstrap-notify.min',
     'd3/radar': 'vendor/d3/radar-chart/js/radar-chart.min'
   },
@@ -23,6 +24,7 @@ require.config({
     'bootstrap': {'deps': ['jquery']},
     'bootstrap/notify': {'deps': ['bootstrap']},
     'jquery/jstree': {'deps': ['jquery']},
+    'jquery/validation': {'deps': ['jquery']},
     'd3/radar': {'deps': ['d3'], 'exports': 'RadarChart'}
   }
   // locale: 'zh-TW',
